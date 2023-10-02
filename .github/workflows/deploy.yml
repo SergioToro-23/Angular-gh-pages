@@ -24,5 +24,10 @@ jobs:
     - name: Install dependencies
       run: npm install
 
+    - name: Configure Git identity
+      run: |
+        git config --global user.email "sergioandres.19@hotmail.com"
+        git config --global user.name "SergioToro-23"    
+
     - name: Build and deploy
-      run: sudo ng deploy --base-href=https://SergioToro-23.github.io/Leidy-mi-amorcito/ --no-silent
+      run: ng deploy --base-href=https://SergioToro-23.github.io/Leidy-mi-amorcito/ --no-silent
