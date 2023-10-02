@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'front-amol';
+  title = 'Mi Carta Para Leidy';
+
+  mensaje: string = 'Oye mi princesa, tu me haces muy feliz y te quiero enamorar cada dia de mi vida';
+  autor: string = 'Pandita(muak)';
 }
