@@ -26,10 +26,9 @@ jobs:
 
     - name: Configure Git identity
       run: |
-        git config  user.name "SergioToro-23" 
-        git config  user.email "sergioandres.19@hotmail.com" 
-        git remote add origin https://{SergioToro-23}:{Andrew951Tyler}@github.com/{SergioToro-23}/Leidy-mi-amorcito.git
+        git config  --global user.name "SergioToro-23" 
+        git config  --global user.email "sergioandres.19@hotmail.com"         
         git config --list          
 
     - name: Build and deploy
-      run: ng deploy --base-href=https://{SergioToro-23}:{Andrew951Tyler}@github.com/{SergioToro-23}/Leidy-mi-amorcito.git --no-silent
+      run: ng deploy --base-href=git@github.com:{SergioToro-23}/Leidy-mi-amorcito.git --no-silent
