@@ -31,7 +31,8 @@ jobs:
         git config --list          
 
     - name: Build and deploy
-      run: ng deploy --base-href=https://SergioToro-23.github.io/Leidy-mi-amorcito/ --no-silent
-      npx gh-pages -d build -u "github-actions-bot <support+actions@github.com>"
+      run: |
+          ng deploy --base-href=https://SergioToro-23.github.io/Leidy-mi-amorcito/ --no-silent
+          npx gh-pages -d build -u "github-actions-bot <support+actions@github.com>"
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
