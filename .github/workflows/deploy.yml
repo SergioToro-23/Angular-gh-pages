@@ -33,6 +33,6 @@ jobs:
     - name: Build and deploy
       run: |
           ng deploy --base-href=https://git:${GITHUB_TOKEN}@github.com/SergioToro-23.github.io/Leidy-mi-amorcito.git --no-silent
-          npx gh-pages -d build -u "github-actions-bot <support+actions@github.com>"
+          npx gh-pages -d build -u "github-actions-bot <support+actions@github.com>" 
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
